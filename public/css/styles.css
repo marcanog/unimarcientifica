@@ -1,0 +1,650 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+    font-family: "Roboto", sans-serif;
+}
+body {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+.main {
+    background-color: rgb(238, 238, 238);
+    min-height: 100vh;
+}
+
+/*---------------------BARRA DE NAVEGACIÓN----------------------------------*/
+.navbar {
+    background-color: #084456;
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar .navbar-collapse .dropdown-menu {
+    margin: 0 auto;
+}
+
+.navbar li a {
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar li i {
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+li.navbar-item a:hover,
+li.navbar-item a:focus {
+    text-decoration-line: underline;
+    text-decoration-color: #f6e5c0;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    border-radius: 4px;
+}
+.navbar a {
+    color: #fff;
+}
+.navbar .dropdown-menu {
+    background: #084456;
+    color: #fff;
+    border: none;
+    box-shadow: 2px rgba(0, 0, 0, 0.2);
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+    background: #f6e5c0;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.navbar-nav #search-box i {
+    background-color: white;
+}
+.navbar-nav li#icons button {
+    color: white;
+}
+.navbar-nav li#icons button:hover {
+    color: #ea9658;
+}
+.navbar-nav li .px-4 {
+    width: 360px;
+    left: 0;
+}
+.navbar-nav li .px-4 input {
+    width: 220px;
+    height: 42px;
+    border-color: transparent;
+}
+.navbar #lineas {
+    width: 200px;
+    text-align: center;
+}
+
+/*--------------------------------------MODAL DE LOGIN/SINGIN--------------------------------------------------*/
+#loginModal .modal-content {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(238, 238, 238);
+}
+#loginModal .modal-header {
+    background-color: #084456;
+}
+#loginModal .modal-header .modal-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#loginModal .modal-header button {
+    color: red;
+}
+#loginModal .modal-body .modal-title {
+    text-align: center;
+}
+#loginModal .modal-body .modal-title #linea {
+    color: hsl(25, 78%, 63%);
+    size: 3;
+}
+#loginModal .modal-body .form-group {
+    position: relative;
+}
+#loginModal .modal-body h6 {
+    font-size: 17px;
+}
+#loginModal .modal-body i {
+    position: absolute;
+    left: 13px;
+    top: 11px;
+    font-size: 18px;
+}
+#loginModal .modal-body .form-control {
+    padding-left: 40px;
+}
+#loginModal .modal-body .col-6 a {
+    font-size: 15px;
+    padding: -5px;
+}
+#loginModal .modal-body .col-6 button {
+    font-size: 15px;
+}
+/*-------------------------------------*/
+#singinModal .modal-content {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(238, 238, 238);
+}
+#singinModal .modal-header {
+    background-color: #084456;
+}
+#singinModal .modal-header .modal-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#singinModal .modal-header button {
+    color: red;
+}
+#singinModal .modal-body .modal-title {
+    text-align: center;
+}
+#singinModal .modal-body .modal-title #linea {
+    color: hsl(25, 78%, 63%);
+    size: 3;
+}
+#singinModal .modal-body .form-group {
+    position: relative;
+}
+#singinModal .modal-body h6 {
+    font-size: 17px;
+}
+#singinModal .modal-body i {
+    position: absolute;
+    left: 13px;
+    top: 11px;
+    font-size: 18px;
+}
+#singinModal .modal-body .form-control {
+    padding-left: 40px;
+}
+#singinModal .modal-body button {
+    font-size: 15px;
+}
+.nombre input #name {
+    margin: 5px;
+    padding: 5px 15px;
+    background: #7c7c7c;
+    color: #fff;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+/*-------------------------------------FOOTER----------------------------------------------------------------*/
+.footer {
+    bottom: 0;
+    background-color: #084456;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 2px rgba(0, 0, 0, 0.2);
+    position: static;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}
+.footer #contenido-footer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.footer ul#social-media .social-media-title {
+    margin-top: 60px;
+    text-align: left;
+    margin-left: 90px;
+    text-transform: uppercase;
+}
+.footer ul#social-media .social-icons {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer #contenido-footer .social-icons .social__icon--link {
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    align-items: center;
+}
+.footer #contenido-footer .social-icons {
+    width: 180px;
+    float: none;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.footer #unimarlogo .unimar-link img {
+    width: auto;
+    height: 150px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+.footer #contenido-footer img {
+    width: auto;
+    height: 110px;
+    margin-top: 55px;
+}
+/*-------------------------------------------HOME-----------------------------------------------------------*/
+.edition-cover img {
+    border-radius: 5px;
+    box-shadow: 4px 4px rgba(158, 158, 158, 0.2);
+}
+
+#popular {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.list-group #popular_header_barside {
+    background-color: #ea9658;
+    color: #000;
+}
+.list-group #popular_header_barside h5 {
+    font-size: 17px;
+    font-weight: bold;
+}
+.list-group #popular_header_barside i {
+    font-size: 20px;
+}
+
+.list-group .contenido-popular-bar h6 {
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.list-group .contenido-popular-bar p {
+    font-size: 14px;
+
+    margin-bottom: 4px;
+}
+.list-group-item:hover {
+    transition: all 0.3s ease-out;
+    background: rgba(234, 150, 88, 0.1);
+}
+
+.edition_title h4 {
+    font-size: 23px;
+    text-align: center;
+}
+
+.mb-3 {
+    box-shadow: 4px 4px rgba(158, 158, 158, 0.2);
+}
+.card:hover {
+    transition: all 0.3s ease-out;
+    background: rgba(234, 150, 88, 0.1);
+}
+
+.card-body .badge {
+    background-color: #084456;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*------------------------------------------------ARTICULO-----------------------------------------------------------*/
+/*TITULO*/
+.article .title-article h2 {
+    text-align: center;
+    font-size: 27px;
+}
+/*IMAGEN DEL ARTÍCULO*/
+.article .img-article img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 4px 4px rgba(158, 158, 158, 0.4);
+}
+/*INFORMACION DE LA IMAGEN DEL ARTÍCULO*/
+.article .info-img {
+    float: right;
+    padding-right: 100px;
+}
+/*ABSTRACTO DEL ARTÍCULO*/
+.article .title-resume-article {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.article .resume-article {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 30px;
+}
+/*BOTON DE DESCARGA DEL ARTÍCULO COMPLETO*/
+.article .button-article {
+    text-align: center;
+}
+.article .button-article.inivtacion {
+    padding-top: 4px;
+}
+.article .button-article.inivtacion p {
+    background-color: #d6d6d6ab;
+    width: 300px;
+    height: 35px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(133, 2, 2);
+}
+/************************BARRA LATERAL DE INFORMACIÓN DEL AUTOR*****************/
+#content_bar_right {
+    background-color: rgba(238, 232, 224, 0.5);
+}
+#content_bar_right .content {
+    margin-left: 0;
+    margin-right: 5px;
+}
+#content_bar_right .content h6 {
+    text-align: center;
+    font-size: 17px;
+}
+/*FOTO DEL AUTOR*/
+#content_bar_right .content img {
+    width: 160px;
+    height: 160px;
+    border-radius: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px rgba(158, 158, 158, 0.4);
+}
+/*CENTRADO DEL CONTENIDO*/
+#content_bar_right .content {
+    line-height: 16px;
+}
+#content_bar_right .content p {
+    text-align: justify;
+    font-size: 14px;
+}
+/**************************ÁREA DE COMENTARIOS*******************************/
+.article-comments .background-comment {
+    background-color: rgba(255, 255, 255, 0.747);
+    color: #000;
+    box-shadow: 0px 1px 0px rgb(223, 223, 223) inset;
+}
+.article-comments .comment-header {
+    padding-top: 20px;
+}
+/*CAJA DE COMENTARIOS*/
+.article-comments .comment-header .comment-area p {
+    padding-top: 3px;
+    font-size: 18px;
+    line-height: 2px;
+}
+.article-comments .comment-header .comment-area .gradiente {
+    color: #06801bbe;
+    padding-bottom: 3px;
+}
+.article-comments .comment-header .comment-area form {
+    display: flex;
+}
+.article-comments .comment-header .comment-area textarea {
+    display: inline-block;
+    width: 90%;
+    resize: none;
+}
+.article-comments .comment-header .comment-area #submit {
+    display: inline-block;
+    width: 10%;
+}
+/*ENCABEZADO DE COMENTARIOS*/
+.article-comments .comment-header .title-comment-section p {
+    padding-top: 3px;
+    font-size: 18px;
+    line-height: 2px;
+}
+.article-comments .comment-header .title-comment-section .gradiente {
+    color: #06801bbe;
+}
+.article-comments .comment-header .title-comment-section .inivtacion {
+    padding-top: 4px;
+}
+.article-comments .comment-header .title-comment-section .inivtacion p {
+    background-color: #d6d6d6ab;
+    width: 300px;
+    height: 35px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(133, 2, 2);
+}
+/******************LISTADO DE COMENTARIOS PUBLICADOS*************************/
+.article-comments .posted-comment-area .user-name-comment img {
+    width: 25px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    float: left;
+}
+.article-comments .posted-comment-area .user-name-comment p {
+    font-size: 15px;
+    margin-left: 45px;
+    padding-top: 1px;
+}
+.article-comments .posted-comment-area .user-comment p {
+    font-size: 15px;
+    margin-left: 50px;
+    padding-bottom: 7px;
+    line-height: 2px;
+}
+/*--------------------------------------INFORMACION--------------------------------------------------*/
+.main .container .accordion .card-header i {
+    position: absolute;
+    right: 1rem;
+}
+/*------------------------------------------AUTORES---------------------------------------------------*/
+.accordion .card .card-body #imgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion .card .card-body #imgauthor {
+    width: 160px;
+    height: 160px;
+    border-radius: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px rgba(158, 158, 158, 0.4);
+}
+.accordion .card .card-body #infoautorcontainer {
+    padding-left: 45px;
+}
+.accordion .card .card-body #link-author a {
+    text-decoration: none;
+}
+/******************************************************/
+.title-sections h2 {
+    text-align: left;
+    font-size: 30px;
+}
+/*---------------------ADMIN PANEL----------------------------------------------*/
+/*---------------------layout---------------------*/
+.navbar #navbar-admin {
+    background-color: #084456;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+}
+.navbar #navbar-admin a {
+    color: #fff;
+}
+.navbar #navbar-admin a:hover {
+    color: #fff;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #313131;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar #sidebar-items {
+    background-color: #313131;
+    color: #fff;
+}
+
+.sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/*On mouse-over */
+.sidenav a:hover {
+    color: #04aa6d;
+}
+.dropdown-btn:hover {
+    background-color: red;
+}
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #04aa6d;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+/*******************EDICIONES*******************************/
+.main .container #edicion {
+    padding-bottom: 10px;
+}
+.main .container #edicion .card {
+    width: 100%;
+    height: auto;
+    border-color: #979797;
+}
+
+.main .container #edicion .card h5 {
+    text-align: center;
+}
+.main .container #edicion .card a {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+/***********************admin*********************/
+.spanish-backgorund {
+    background-color: #fdf5001e;
+    border-radius: 10px;
+    padding: 10px;
+}
+.spanish-backgorund h5 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.english-backgorund {
+    background-color: #1100fd11;
+    border-radius: 10px;
+    padding: 10px;
+}
+.english-backgorund h5 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#title-info p {
+    margin-top: 20px;
+    margin-right: 30px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input[type="file"] {
+    margin: 5px;
+    padding: 5px 15px;
+    background: #7c7c7c;
+    color: #fff;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    margin: 5px;
+    padding: 10px 25px;
+    background: #0f4601;
+    color: #fff;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+input#texto {
+    margin: 5px;
+    height: 50px;
+    padding: 5px 15px;
+    width: 750px;
+    background: #fff;
+    color: #000;
+    border-color: rgba(156, 155, 155, 0.692);
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}

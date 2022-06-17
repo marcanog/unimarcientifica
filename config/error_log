@@ -1,0 +1,8 @@
+[06-Dec-2021 13:26:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admincientifica/public_html/revista/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/admincientifica/public_html/revista/config/cache.php on line 21
+[06-Dec-2021 13:26:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/admincientifica/public_html/revista/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admincientifica/public_html/revista/config/view.php on line 17

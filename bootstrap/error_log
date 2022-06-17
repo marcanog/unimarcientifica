@@ -1,0 +1,4 @@
+[06-Dec-2021 13:25:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/admincientifica/public_html/revista/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/admincientifica/public_html/revista/bootstrap/app.php on line 14
